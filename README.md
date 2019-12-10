@@ -19,10 +19,10 @@ Then copy the contents of FILENAME.base64 to a secret in your mobile apps' GitHu
 In your project's action worksflow, add the install provisioning profile step prior to your app's build step.
 
 ```
-steps:
-- name: Install provisioning profile
-  uses: mobileactions/iOSProvisioningProfile@1.0
-  env:
-    ENCODED-PROFILE: ${{ secrets.YOUR_SECRET_NAME }}
+    steps:
+    - name: Install provisioning profile
+      uses: mobileactions/install-ios-provisioning-profile@releases/v1
+      with:
+        encoded-profile: ${{ secrets.PROVISIONING_PROFILE }}
 ```
 
