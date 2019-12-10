@@ -21,7 +21,7 @@ In your project's action worksflow, add the install provisioning profile step pr
 ```
     steps:
     - name: Install provisioning profile
-      uses: mobileactions/install-ios-provisioning-profile@releases/v1
+      uses: mobileactions/install-ios-provisioning-profile@v1
       with:
         encoded-profile: ${{ secrets.PROVISIONING_PROFILE }}
 ```
