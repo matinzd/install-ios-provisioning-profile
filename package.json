@@ -2,7 +2,7 @@
   "name": "typescript-action",
   "version": "0.0.0",
   "private": true,
-  "description": "Installs iOS Provisioning Profile for signing IPA.",
+  "description": "Installs iOS Provisioning Profile for code signing IPA.",
   "main": "lib/installprovprofile.js",
   "scripts": {
     "build": "tsc",

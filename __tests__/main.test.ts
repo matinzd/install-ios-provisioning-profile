@@ -33,4 +33,3 @@ test('Check if provisioning profile installed correctly', async() => {
     console.log("Name: " + name);
   });
 });
-

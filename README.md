@@ -25,3 +25,4 @@ steps:
   env:
     ENCODED-PROFILE: ${{ secrets.YOUR_SECRET_NAME }}
 ```
+
