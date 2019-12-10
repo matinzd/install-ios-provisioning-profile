@@ -8,7 +8,7 @@ test('Install provisioning profile', async() => {
     fs.readFile(path.join(__dirname, "testprovprofile.mobileprovision.base64"), "utf8", async (err, data) => {
 
         //Simulates file being stored as a GitHub secret
-        core.exportVariable('INPUT_PROVISIONING_PROFILE', data);
+        core.exportVariable('INPUT_ENCODED-PROFILE', data);
 
         await ios.installProvisioningProfileTask(); 
       });
@@ -20,7 +20,7 @@ test('Check if provisioning profile installed correctly', async() => {
   fs.readFile(path.join(__dirname, "testprovprofile.mobileprovision.base64"), "utf8", async (err, data) => {
 
     //Simulates file being stored as a GitHub secret
-    core.exportVariable('INPUT_PROVISIONING_PROFILE', data);
+    core.exportVariable('INPUT_ENCODED-PROFILE', data);
 
     await ios.installProvisioningProfileTask(); 
 
