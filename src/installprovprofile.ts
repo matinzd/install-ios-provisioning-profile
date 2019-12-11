@@ -2,8 +2,8 @@ import os = require('os');
 import core = require('@actions/core');
 import io = require('@actions/io');
 const exec = require('@actions/exec');
-import ioutils = require('@mobileactions/actions-common');
 import sign = require('@mobileactions/ios-common');
+import ioutils = require('@mobileactions/actions-common');
 import fs = require('fs');
 import path = require('path');
 
