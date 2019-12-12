@@ -1,5 +1,8 @@
 # Install iOS Provisioning Profile
 
+![](https://github.com/mobileactions/install-ios-provisioning-profile/workflows/Release/badge.svg)
+
+
 Use this action to install a provisioning profile during your iOS build. The profile is automatically removed post-build.
 
 ## Setup
