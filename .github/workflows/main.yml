@@ -11,4 +11,3 @@ jobs:
         uses: technote-space/release-github-actions@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BUILD_COMMAND: echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}\nregistry=https://npm.pkg.github.com/mobileactions' > .npmrc 
