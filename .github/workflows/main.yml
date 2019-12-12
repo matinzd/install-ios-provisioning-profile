@@ -7,10 +7,8 @@ jobs:
     name: Release GitHub Action Install iOS Provisioning Profile
     runs-on: [macOS-latest]
     steps:
-      - name: Create issue using REST API
-        run: |
-          echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}\nregistry=https://npm.pkg.github.com/mobileactions' > .npmrc
       - name: Release GitHub Actions
         uses: technote-space/release-github-actions@v2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BUILD_COMMAND: echo '//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}\nregistry=https://npm.pkg.github.com/mobileactions' > .npmrc 
