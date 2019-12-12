@@ -25,8 +25,8 @@
     "@actions/io": "^1.0.0",
     "@types/minimatch": "^3.0.3",
     "@types/semver": "^6.2.0",
-    "@mobileactions/ios-common": "^1.0.6",
-    "@mobileactions/actions-common": "^1.0.5",
+    "@mobileactions/ios-common": "^1.0.7",
+    "@mobileactions/actions-common": "^1.0.10",
     "tsc": "^1.20150623.0"
   },
   "devDependencies": {
